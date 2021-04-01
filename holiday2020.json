@@ -1,0 +1,66 @@
+[
+    {
+        "name": "New Year in Finland",
+        "date": "2020-12-31T22:00:00.000Z"
+    },
+    {
+        "name": "New Year's Day",
+        "date": "2020-12-31T22:00:00.000Z"
+    },
+    {
+        "name": "Epiphany",
+        "date": "2021-01-05T22:00:00.000Z"
+    },
+    {
+        "name": "Good Friday",
+        "date": "2021-04-01T21:00:00.000Z"
+    },
+    {
+        "name": "Easter Sunday",
+        "date": "2021-04-03T21:00:00.000Z"
+    },
+    {
+        "name": "Easter Monday",
+        "date": "2021-04-04T21:00:00.000Z"
+    },
+    {
+        "name": "Vappu",
+        "date": "2021-04-30T21:00:00.000Z"
+    },
+    {
+        "name": "Ascension Day",
+        "date": "2021-05-12T21:00:00.000Z"
+    },
+    {
+        "name": "Whitsun",
+        "date": "2021-05-22T21:00:00.000Z"
+    },
+    {
+        "name": "Midsummer Eve",
+        "date": "2021-06-24T21:00:00.000Z"
+    },
+    {
+        "name": "Midsummer's Day",
+        "date": "2021-06-25T21:00:00.000Z"
+    },
+    {
+        "name": "All Saints' Day",
+        "date": "2021-11-05T22:00:00.000Z"
+    },
+    {
+        "name": "Independence Day (of Finland)",
+        "date": "2021-12-05T22:00:00.000Z"
+    },
+    {
+        "name": "Christmas Eve",
+        "date": "2021-12-23T22:00:00.000Z"
+    },
+    {
+        "name": "Christmas Day",
+        "date": "2021-12-24T22:00:00.000Z"
+    },
+    {
+        "name": "St. Stephen's Day",
+        "date": "2021-12-25T22:00:00.000Z"
+    }
+]
