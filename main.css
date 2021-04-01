@@ -13,11 +13,6 @@
     }    
 }
 
-body{
-    display: flex;
-    justify-content: center;
-}
-
 #holiday{
     margin: auto;
     text-align: center;
@@ -25,4 +20,5 @@ body{
     font-weight: 600;
     position: absolute;
     top: 30%;
+    width: 99%;
 }
