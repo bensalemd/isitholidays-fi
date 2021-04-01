@@ -1,8 +1,30 @@
-fetch('./holiday2021.json').then(async (resp) => {
-    const holidays2021 = await resp.json();
-    const currentDate = new Date();
-    currentDate.setHours(0,0,0,0);
-    const holiday = holidays2021?.find((el) => el.date === currentDate.toISOString());
+const CANVAS_EL = document.getElementById("stage");
+const TEXT_EL = document.getElementById("info");
+const DEFAULT_LANGUAGE = "en";
+const COUNTRY_CODE = "FI";
 
-    document.getElementById('holiday').innerText = holiday ? `Yes\nIt is ${holiday.name}` : 'No';
-})
+const holidays = new Holidays.default();
+holidays.init(COUNTRY_CODE);
+holidays.setLanguages(DEFAULT_LANGUAGE);
+
+let holiday = holidays.isHoliday(new Date("2021-05-13"));
+
+if (holiday) {
+    holiday = holiday[0];
+    TEXT_EL.innerText = `Yes\nIt is ${holiday.name}`;
+    let animation = animations.specific.find(
+        (item) => item.holidayName === holiday.name
+    );
+
+    if (!animation) {
+        const randomGenericAnimation = Math.floor(
+            Math.random() * animations.generic.length
+        );
+        console.log(randomGenericAnimation);
+        animation = animations.generic[randomGenericAnimation];
+    }
+
+    animation?.present(holiday, CANVAS_EL, TEXT_EL);
+} else {
+    TEXT_EL.innerText = "No";
+}
