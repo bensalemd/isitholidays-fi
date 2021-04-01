@@ -1,4 +1,4 @@
-fetch('./holiday2020.json').then(async (resp) => {
+fetch('./holiday2021.json').then(async (resp) => {
     const holidays2020 = await resp.json();
     const currentDate = new Date();
     currentDate.setHours(0,0,0,0);
