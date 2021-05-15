@@ -7,7 +7,7 @@ const holidays = new Holidays.default();
 holidays.init(COUNTRY_CODE);
 holidays.setLanguages(DEFAULT_LANGUAGE);
 
-let holiday = holidays.isHoliday(new Date("2021-05-13"));
+let holiday = holidays.isHoliday(new Date());
 
 if (holiday) {
     holiday = holiday[0];
